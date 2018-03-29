@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset = "UTF-8"/>
+    <title>The Game of Life</title>
+    <link rel="stylesheet" href="life.css">
+</head>
+<body>
+
+<div id="gridContainer"> </div>
+
+<div class="controls">
+<button id="start">start</button>
+<button id="step">step</button>
+<button id="clear">clear</button>
+<button id="random">random</button>
+<span id="counter">Generation: </span>
+</div>
+<br>
+Board size (rows,cols):
+<input id="rows" type="text" value=60 size=4>
+<input id="cols" type="text" value=60 size=4>
+<button id="grid_size">Enter</button>
+<br><br>
+Boundary condition:
+<input type="radio" id="bound0" name="boundary" value="wrap" checked>wrap
+<input type="radio" id="bound1" name="boundary" value="fixed">fixed
+<br><br>
+Random seed: <input id="seed" type="text" value=123456 size=8>
+<br><br>
+
+
+<table>
+  <tr>
+    <td>Neighbours:</td>
+    <td>0</td>
+    <td>1</td>
+    <td>2</td>
+    <td>3</td>
+    <td>4</td>
+    <td>5</td>
+    <td>6</td>
+    <td>7</td>
+    <td>8</td>
+  </tr>
+  <tr>
+    <td>Live:</td>
+    <td><input type="checkbox"" name="rule_living" value="0"></td>
+    <td><input type="checkbox"" name="rule_living" value="0"></td>
+    <td><input type="checkbox"" name="rule_living" value="0" checked></td>
+    <td><input type="checkbox"" name="rule_living" value="0" checked></td>
+    <td><input type="checkbox"" name="rule_living" value="0"></td>
+    <td><input type="checkbox"" name="rule_living" value="0"></td>
+    <td><input type="checkbox"" name="rule_living" value="0"></td>
+    <td><input type="checkbox"" name="rule_living" value="0"></td>
+    <td><input type="checkbox"" name="rule_living" value="0"></td>
+</tr>
+  <tr>
+    <td>Dead:</td>
+    <td><input type="checkbox"" name="rule_dead" value="0"></td>
+    <td><input type="checkbox"" name="rule_dead" value="0"></td>
+    <td><input type="checkbox"" name="rule_dead" value="0"></td>
+    <td><input type="checkbox"" name="rule_dead" value="0" checked></td>
+    <td><input type="checkbox"" name="rule_dead" value="0"></td>
+    <td><input type="checkbox"" name="rule_dead" value="0"></td>
+    <td><input type="checkbox"" name="rule_dead" value="0"></td>
+    <td><input type="checkbox"" name="rule_dead" value="0" checked></td>
+    <td><input type="checkbox"" name="rule_dead" value="0" checked></td>
+  </tr>
+</table>
+<script src="code.js"></script>
+
+
+</body>
+</html>
